@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-<div id="mainNavigation">
-    <nav role="navigation">
-        <div class="py-3 text-center border-bottom" >
-        <a href="index.html"><img src="images/logo.png" alt="" class="invert img-fluid" style="max-height: 100px;"></a>
+    <div id="mainNavigation">
+        <nav role="navigation">
+            <div class="py-3 text-center border-bottom">
+                <a href="index.html"><img src="images/logo.png" alt="" class="invert img-fluid"
+                        style="max-height: 100px;"></a>
+            </div>
+        </nav>
+        <div class="navbar-expand-md">
+            <div class="navbar-dark text-center my-2">
+                <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+                </button>
+            </div>
+            <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="navbar-expand-md">
-        <div class="navbar-dark text-center my-2">
-        <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" ></span> <span class="align-middle">Menu</span>
-        </button>
-        </div>
-        <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto ">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-        </ul>
-        </div>
-    </div>
     </div>
     <script src="script.js"></script>
-    <img src="images/2.webp" style="background-repeat: no-repeat; position: fixed; background-size: cover; " alt="">
+    <img src="images/2.jpg" style="background-repeat: no-repeat; position: fixed; background-size: cover; z-index: -1;" alt="">
+    <style>
+         div.box {
+            position: absolute;
+            background-color: rgb(150, 150, 150);
+            width: 300px;
+            border: 45px solid rgb(255, 255, 255);
+            border: 5px solid rgb(0, 238, 255);
+            padding: 50px;
+            margin-top: 200px;
+        }
+    </style>
+    <div class="d-flex justify-content-center">
+        <div class ="box justify-content-center">
+            <h2><strong style="color: rgb(0, 0, 0)"> About us</strong></h2> 
+            
+            <p style="color: rgb(255, 255, 255);">
+            This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+        </div>       
+    </div>
+    </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</body>
 </html>
