@@ -59,21 +59,31 @@
         </div>
     </div>
     <script src="script.js"></script>
-    <img src="images/2.jpg" style="background-repeat: no-repeat; position: fixed; background-size: cover; z-index: -1;" alt="">
+    <img src="/images/2.jpg" alt="" style="  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  filter: brightness(0.8);">
     <style>
          div.box {
-            position: absolute;
-            background-color: rgb(150, 150, 150);
-            width: 300px;
-            border: 45px solid rgb(255, 255, 255);
-            border: 5px solid rgb(0, 238, 255);
+            background: rgba(0, 0, 0, 0.404);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 3px solid rgb(0, 247, 255);
+            color: white;
+            position: absolute; 
+            width: 500px;
             padding: 50px;
-            margin-top: 200px;
+            top: 50%;
+            transform: translate(0%, -50%);
         }
     </style>
     <div class="d-flex justify-content-center">
         <div class ="box justify-content-center">
-            <h2><strong style="color: rgb(0, 0, 0)"> About us</strong></h2> 
+            <h2><strong style="color: white"> About us</strong></h2> 
             
             <p style="color: rgb(255, 255, 255);">
             This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut
