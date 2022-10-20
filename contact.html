@@ -64,7 +64,7 @@
   object-fit: cover;
   object-position: bottom;
   position: absolute;
-  filter: brightness(0.8);">
+  filter: brightness(0.7);">
     <style>
         div.box {
             background: rgba(0, 0, 0, 0.404);
@@ -74,11 +74,23 @@
             -webkit-backdrop-filter: blur(20px);
             color: white;
             position: absolute;
+
             width: 500px;
             padding: 50px;
             top: 50%;
             transform: translate(0%, -40%);
+            transition: all 1s;
         }
+        @media only screen and (max-width: 500px) {
+            div.box {
+                width: 100%;
+                line-height: 1.1;
+                margin-top: 5vh;
+                padding: 20px;
+            }
+            #bg {
+                height: 100%;
+            }
     </style>
     <div class="d-flex justify-content-center">
         <div class="box justify-content-center">
