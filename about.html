@@ -23,9 +23,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="contact.css">
 </head>
 
-<body>
+<body style="background-color: rgb(41, 41, 41)">
     <div id="mainNavigation">
         <nav role="navigation">
             <div class="py-3 text-center border-bottom">
@@ -66,53 +67,46 @@
   object-position: bottom;
   position: absolute;
   filter: brightness(0.8);">
-    <style>
-        div.box {
-            background: rgba(0, 0, 0, 0.404);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 3px solid rgb(0, 247, 255);
-            color: white;
-            position: absolute;
-           
-
-            width: 500px;
-            padding: 50px;
-            top: 50%;
-            transform: translate(0%, -40%);
-            transition: all 1s;
-        }
-
-        @media only screen and (max-width: 500px) {
-            div.box {
-                width: 100%;
-                line-height: 1.1;
-                margin-top: 5vh;
-                padding: 20px;
-            }
-            #bg {
-                height: 100%;
-            }
-            }
-    </style>
-    <div class="d-flex justify-content-center">
-        <div class="box justify-content-center">
-            <h2><strong style="color: white"> About us</strong></h2>
-
-            <p style="color: rgb(255, 255, 255);">
-                Automatisiertes Fahren, Elektromobilität, On Demand Mobility und Konnektivität – Mobilität war
-                keineswegs auf diese Weise attraktiv, automobile Fortbewegung zu keinem Zeitpunkt auf diese Weise
-                aufregend und vielversprechend wie heute. Mit Meiermüller.ch, der internationalen Website von Mercedes,
-                wollen wir eine Plattform schaffen, die ebendiese Faszination erlebbar und technische Trends erklärlich
-                macht. Mit Inhalten kugelförmig um das Themengebiet Mobilität, Stories zu alten und modernen Mercedes
-                Meilensteinen und Daten zu historischen, gegenwärtigen und kommenden Mercedes Modellen.
-                Tauchen Sie mit uns in innovative Welten ein, lassen Sie sich inspirieren und erfahren Sie Tag für Tag
-                Neues, Eigenartiges und Hilfreiches. Auf Meiermüller.ch – unserer digitalen Interpretation von Spaß am
-                Fahren.</p>
-        </div>
-    </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <div class="container" id="box" style="height: 592px !important;">
+        <div class="contact__wrapper shadow-lg mt-n9">
+            <div class="row no-gutters">
+                <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                    <h3 class="color--white mb-5">Kontakt Aufnehmen</h3>
+        
+                    <ul class="contact-info__list list-style--none position-relative z-index-101">
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-envelope"></i></span> support@meiermueller.com
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-phone"></i></span> 078 930 35 35
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> MeierMüller AG
+                            <br> Bahnhofsstrasse 1 
+                            <br> 8050 Zürich
+        
+                            <div class="mt-3">
+                                <a href="https://www.google.com/maps" target="_blank" class="text-link link--right-icon text-white">Google Maps <i class="link__icon fa fa-directions"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center">
+                </div>
+                <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                    <h2><strong style="color: white"> About us</strong></h2>
+                    <p style="color: rgb(255, 255, 255);">
+                        Automatisiertes Fahren, Elektromobilität, On Demand Mobility und Konnektivität – Mobilität war
+                        keineswegs auf diese Weise attraktiv, automobile Fortbewegung zu keinem Zeitpunkt auf diese Weise
+                        aufregend und vielversprechend wie heute. Mit Meiermüller.ch, der internationalen Website von Mercedes,
+                        wollen wir eine Plattform schaffen, die ebendiese Faszination erlebbar und technische Trends erklärlich
+                        macht. Mit Inhalten kugelförmig um das Themengebiet Mobilität, Stories zu alten und modernen Mercedes
+                        Meilensteinen und Daten zu historischen, gegenwärtigen und kommenden Mercedes Modellen.
+                        Tauchen Sie mit uns in innovative Welten ein, lassen Sie sich inspirieren und erfahren Sie Tag für Tag
+                        Neues, Eigenartiges und Hilfreiches. Auf Meiermüller.ch – unserer digitalen Interpretation von Spaß am
+                        Fahren.</p>
+                </div>
 </body>
 
 </html>
