@@ -1,0 +1,36 @@
+#box {
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, 40%);
+    background: rgba(0, 0, 0, 0.404);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.7s ease 0s; 
+}
+  
+  .contact-info__list span.position-absolute {
+    left: 0
+  }
+  .z-index-101 {
+    z-index: 101;
+  }
+  .list-style--none {
+    list-style: none;
+  }
+  .contact__wrapper {
+    border-radius: 0 0 .625rem .625rem
+  }
+  
+  @media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+  }
+  @media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+  }

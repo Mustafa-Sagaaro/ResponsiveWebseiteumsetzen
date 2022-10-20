@@ -1,9 +1,18 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+
 #mainNavigation a {
+
     font-family: 'Cabin', sans-serif;
     font-size:14px;
     text-transform:uppercase;
     letter-spacing:2px;
-    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+    
   }
    
   .dropdown-menu {
@@ -25,7 +34,9 @@
     min-width:12vw;
   }
   #mainNavigation {
-    position:fixed;
+
+    transition: top 0.3s;
+    position: fixed;
     top:0;
     left:0;
     width:100%;
@@ -39,6 +50,75 @@
   }
   #navbarNavDropdown.collapsing .navbar-nav,
   #navbarNavDropdown.show .navbar-nav{
-    background:#037582;
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding:12px;
   }
+
+
+  .masthead {
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .masthead #shopbtn {
+    background-color: rgba(87, 87, 87, 0.7);
+    border-color: #000;
+  }
+  .masthead h1, .masthead .h1 {
+    transition: all 0.7s ease 0s; 
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  .masthead h2, .masthead .h2 {
+    color: rgb(145, 145, 145);;
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    .masthead h1, .masthead .h1 {
+      color: rgb(145, 145, 145);;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .masthead {
+      color: rgb(145, 145, 145);
+      height: 100vh;
+      padding: 0;
+    }
+    .masthead h1, .masthead .h1 {
+      color: rgb(145, 145, 145);;
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    .masthead h2, .masthead .h2 {
+      color: rgb(145, 145, 145);;
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
